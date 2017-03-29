@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>InsuranceProject</display-name>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.ins.controller.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>com.ins.controller.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>loginPage.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
